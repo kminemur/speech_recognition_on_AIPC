@@ -1,0 +1,20 @@
+[project]
+name = "automated-speech-recognition-on-aipc"
+version = "0.1.0"
+description = "Windows realtime speech recognition app built on OpenVINO and openvino-genai."
+readme = "Readme.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.1,<2.5",
+    "openvino==2026.2.1",
+    "openvino-tokenizers==2026.2.1.0",
+    "openvino-genai==2026.2.1.0",
+    "optimum-intel[openvino]>=2,<3",
+    "huggingface-hub>=1.24,<2",
+    "PyQt6>=6.11,<7",
+    "sounddevice>=0.5.5,<1",
+    "webrtcvad-wheels>=2.0.14,<3",
+]
+
+[tool.uv]
+package = false
